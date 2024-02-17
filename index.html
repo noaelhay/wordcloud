@@ -1,0 +1,97 @@
+﻿<!doctype html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>תכנות 3 - JavaScript</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.rtl.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- bootstrap -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+    <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">דף הבית</a>
+        <a href="#news">הפעילויות שלנו</a>
+        <a href="#contact">צרו קשר</a>
+        <a href="#about">קצת עלינו</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
+      
+    </div>
+    <div class="img-wrapper">
+      <img src="images/newbg.png" />
+      <div class="overlay">
+          <h1>
+              פעילויות מומלצות עם
+              Interacive Cloud
+          </h1>
+      </div>
+  </div>
+       
+        <!-- פה יוצגו המערכות -->
+        <div id="itemsContainer" class="container">
+
+        </div>
+
+        <!-- פה יוצג המידע על מערכת שנלחצה -->
+        <!-- אנחנו יוצרים פופ-אפ אחד אליו נפנה דרך הקוד -->
+        <div id="myModal" class="modal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="chosenItem">
+                        <p></p>
+                        <a></a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">סגירה</button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+    <main class="carousel-container">
+        <h2>אנשים מספרים עלינו</h2>
+        <div class="carousel">
+          <div class="item active">
+            <img src="images/qoute1.jpg" alt="Image 1" />
+          </div>
+          <div class="item">
+            <img src="images/qoute2.jpg" alt="Image 2" />
+          </div>
+          <div class="item">
+            <img src="images/qoute3.jpg" alt="Image 3" />
+          </div>
+        </div>
+        
+        <button class="btn prev"><img src="images/left.png"></button>
+        <button class="btn next"><img src="images/right.png"></button>
+        <div class="dots"></div>
+      </main>
+ 
+     
+
+    </div>
+</body>
+
+</html>
